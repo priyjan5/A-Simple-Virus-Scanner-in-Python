@@ -1,0 +1,44 @@
+﻿Virus Scanner Explanation
+
+
+Libraries: 
+	
+os - to walk thorough the passed in directory structure
+	
+hashlib - to take the md5 hash of the different files
+	
+argparse - to take command line arguments from the user
+
+
+
+Command Line Arguments:
+	
+—directory [-d] (The directory to scan)
+	
+—signatures [-s] (The signature file)
+
+
+Usage:
+
+	python scanner.py -d [directory] -s [signature_file]
+
+
+Output:
+	
+If a virus file is found it will print out the following line
+	
+[!] File [filename] is a virus
+
+
+File formats:
+	The script is a python file
+	
+The signature file is a text file
+
+
+
+
+To test:
+	
+
+python scanner.py -d . -s signatures.txt
